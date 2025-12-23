@@ -15,6 +15,7 @@ public class A {
 	username.sendKeys("Farith");
 	WebElement passbox = driver.findElement(By.id("pass"));
 	passbox.sendKeys("qwertyuio");
+	driver.findElement(By.id("forgetpassword")).click();
 	
 	
 	
