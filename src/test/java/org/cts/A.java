@@ -1,8 +1,12 @@
 package org.cts;
 
+<<<<<<< HEAD
 import org.jspecify.annotations.Nullable;
+=======
+>>>>>>> e55a63e6478c9ef63daf60d99ca5dea4c347f9f1
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
 
 public class A {
@@ -11,7 +15,12 @@ public class A {
 		
 	WebDriver driver=new ChromeDriver();
 	driver.get("https://en-gb.facebook.com/");
+	WebElement username = driver.findElement(By.id("email"));
+	username.sendKeys("Farith");
+	WebElement passbox = driver.findElement(By.id("pass"));
+	passbox.sendKeys("qwertyuio");
 	driver.findElement(By.id("login")).click();
+
 	
 	
 	
